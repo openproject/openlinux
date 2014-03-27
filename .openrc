@@ -1,3 +1,14 @@
+# ~/.openproject/.openrc
+
+###################  别名  ###################
 alias ack='~/.openlinux/tools/ack'
 alias repo='~/.openlinux/tools/repo'
 alias tig='~/.openlinux/tools/tig'
+
+################### git配置 ##################
+# 编辑器
+git config --global core.editor vim
+# 差异分析工具
+git config --global merge.tool vimdiff
+# 自动高亮
+git config --global color.ui auto
