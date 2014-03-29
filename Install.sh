@@ -22,3 +22,13 @@ cd $OPEN_LINUX_BIN
 chmod a+x "$JAVA_BIN"
 ./$JAVA_BIN
 cd ..
+
+# Gradle配置
+GRADLE_ZIP="gradle-1.11-bin.zip"
+if [ ! -f "$OPEN_LINUX_BIN/$GRADLE_ZIP" ]; then
+    curl http://kaiyuanxiangmu-openproject.stor.sinaapp.com/$GRADLE_ZIP > "$OPEN_LINUX_BIN/$GRADLE_ZIP"
+fi
+cd $OPEN_LINUX_BIN
+unzip $GRADLE_ZIP -d .
+cd ..
+

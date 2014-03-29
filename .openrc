@@ -6,6 +6,22 @@ alias ack='~/.openlinux/tools/ack'
 alias repo='~/.openlinux/tools/repo'
 alias tig='~/.openlinux/tools/tig'
 
+###############  Android SDK  ################
+export ANDROID_HOME="~/tools/sdk"
+export PATH=$ANDROID_HOME/platform-tools:$PATH
+export PATH=$ANDROID_HOME/tools:$PATH
+export PATH=$ANDROID_HOME/build-tools/android-4.4:$PATH
+
+################## JAVA配置 ##################
+export JAVA_HOME="~/.openlinux/bin/jdk1.6.0_45"
+export PATH=$JAVA_HOME/bin:$PATH
+export CLASSPATH=.:$JAVA_HOME/lib
+export JRE_HOME=$JAVA_HOME/jre
+
+################ GRADLE配置 ##################
+export GRADLE_HOME="~/.openlinux/bin/gradle-1.11"
+export PATH=$GRADLE_HOME/bin:$PATH
+
 ################### git配置 ##################
 # 编辑器
 git config --global core.editor vim
@@ -13,9 +29,3 @@ git config --global core.editor vim
 git config --global merge.tool vimdiff
 # 自动高亮
 git config --global color.ui auto
-
-################## JAVA配置 ##################
-export JAVA_HOME="~/.openlinux/bin/jdk1.6.0_45"
-export PATH=$JAVA_HOME/bin:$PATH
-export CLASSPATH=.:$JAVA_HOME/lib
-export JRE_HOME=$JAVA_HOME/jre
